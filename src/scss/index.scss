@@ -13,6 +13,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+h1 {
+  color: purple;
+}
 @media screen and(max-width: 800px) {
   body {
     background-image: url("/src/img/home/background-home-tablet.jpg");
