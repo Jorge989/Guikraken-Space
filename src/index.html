@@ -23,16 +23,22 @@
         <header>
           <nav class="icone-linha">
             <img src="./img/shared/logo.svg" alt="logo" />
+            <button id="mobile" aria-expanded="false"><img src="img/shared/icon-hamburger.svg"/></button>
+                        <button id="close" aria-expanded="false"><img src="img/shared/icon-close.svg"/></button>
                    <hr></hr>
           </nav>
 
-          <nav class="navegacao">
-            <a class="active" href="#"><span>00</span> home</a>
-            <a href="#"><span>01</span> destinations</a>
-            <a href="#"><span>02</span> crew</a>
-            <a href="#"><span>03</span> technology</a>
+          <nav  id="nav">
+            <ul id="menu">
+              <div class="mobile-link">      <li><span>00</span><a class="active" href="#"> home</a></li>  </div>
+         <div class="mobile-link">      <li><span>01</span><a href="#"> destinations</a></li>  </div>
+              <div class="mobile-link">      <li><span>02</span> <a href="#"> crew</a></li>  </div>
+  <div class="mobile-link">      <li><span>03</span>  <a href="#"> technology</a></li>  </div>
+
+      </ul>
+          
           </nav>
-          <button id="btn-mobile">Menu</button>
+
           <!-- <div class="div-mobile"> 
 <input type="checkbox" id="check"/>
 <label for="check" class="checkbtn">
@@ -57,10 +63,16 @@
    <div class="conteudo-paragrafos">
      <h4>so, you want to travel to</h4>
    <h1>space</h1>
-     <p>Let's face it; if you want to go to space, you might as well</br>
+     <p id="paragrafo-desktop">Let's face it; if you want to go to space, you might as well</br>
       genuinely go to outer space and not hover kind of on the</br>
       edge of it. Well sit back, and relax because we'll give you a</br>
       truly out of this world experience!
+    
+    </p>
+      <p id="paragrafo-mobile">Let's face it; if you want to go to space, you might</br> as well
+      genuinely go to outer space and not hover</br> kind of on the
+      edge of it. Well sit back, and relax</br> because we'll give you a
+      truly out of this world</br> experience!
     
     </p>
    </div>
