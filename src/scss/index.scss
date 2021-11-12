@@ -33,6 +33,7 @@ header {
 
   height: 150px;
   padding: 0px 0px 0px 20px;
+
   #mobile {
     display: none;
     padding: 0.5rem;
@@ -113,6 +114,7 @@ header {
           padding-top: 10px;
           gap: 15px;
         }
+
         div {
           width: 100%;
           display: flex;
@@ -258,12 +260,11 @@ header {
     font-weight: 100px;
     font-size: 15px;
     cursor: pointer;
+
     & + a {
       margin-left: 2rem;
     }
-    &:hover {
-      color: #fff;
-    }
+
     &.active {
       color: #fff;
       font-weight: bold;
@@ -273,10 +274,10 @@ header {
       height: 3px;
 
       border-radius: 3px 3px 0 0;
-      width: 80px;
+      width: 70px;
       position: fixed;
       bottom: 1px;
-      left: 8.5%;
+      left: 9.5%;
       background: rgb(255, 255, 255);
     }
   }
@@ -318,12 +319,13 @@ header {
   h1 {
     font-size: 120px;
     letter-spacing: 6px;
+
     // font-family: "Besley", serif;
 
     font-family: "Chakra Petch", sans-serif;
 
     font-weight: 100;
-    text-transform: uppercase;
+    text-transform: uppercase !important;
   }
   .conteudo-paragrafos {
     #paragrafo-mobile {
@@ -335,6 +337,7 @@ header {
       letter-spacing: 5px;
       font-size: 28px;
       font-weight: 200;
+      text-transform: uppercase;
     }
     p {
       padding-left: 10px;
