@@ -625,6 +625,7 @@ header {
         }
       }
     }
+
     h2 {
       font-family: "Bitter", serif;
 
@@ -653,8 +654,8 @@ header {
     }
     hr {
       justify-content: center;
-      width: 73%;
-      margin-left: 70px;
+      width: 82%;
+      margin-left: 60px;
 
       margin-top: 30px;
     }
@@ -1130,13 +1131,13 @@ header {
   &:hover {
     color: #fff;
   }
-  &.ali-mars {
+  &.active-planets {
     display: block;
 
     // font-weight: bold;
   }
 
-  &.li-mars::after {
+  &.active-planets::after {
     display: none;
   }
 }
