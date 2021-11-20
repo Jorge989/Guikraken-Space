@@ -467,6 +467,7 @@ header {
     background-color: transparent;
     width: 500px;
     height: 100%;
+
     #moon-paragrafer-desktop {
       display: block;
     }
@@ -479,6 +480,7 @@ header {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
       // padding-right: 50px;
     }
     ul {
@@ -495,6 +497,27 @@ header {
       li {
         a {
           cursor: pointer;
+          text-decoration: none;
+        }
+        &:hover {
+          color: #fff;
+        }
+        &.active-planets {
+          color: #fff;
+
+          font-weight: bold;
+        }
+
+        &.active-planets::after {
+          content: "";
+          height: 2px;
+
+          border-radius: 3px 3px 0 0;
+          width: 40px;
+          position: fixed;
+          bottom: 395px;
+          left: 79.6%;
+          background: rgb(255, 255, 255);
         }
       }
     }

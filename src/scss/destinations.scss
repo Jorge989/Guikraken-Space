@@ -41,6 +41,7 @@ header {
     display: none;
     padding: 0.5rem;
   }
+
   @media (max-width: 800px) {
     #mobile {
       display: block;
@@ -187,6 +188,11 @@ header {
     border: 0.1px solid rgba(122, 122, 122, 0.295);
     width: 85%;
     z-index: 999;
+  }
+}
+@media (max-width: 1270px) {
+  .active-planets {
+    display: none;
   }
 }
 @media (max-width: 800px) {
@@ -467,6 +473,7 @@ header {
     background-color: transparent;
     width: 500px;
     height: 100%;
+
     #moon-paragrafer-desktop {
       display: block;
     }
@@ -479,6 +486,7 @@ header {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
       // padding-right: 50px;
     }
     ul {
@@ -495,6 +503,105 @@ header {
       li {
         a {
           cursor: pointer;
+          text-decoration: none;
+        }
+        &:hover {
+          color: #fff;
+        }
+        &.active-planets {
+          color: #fff;
+
+          // font-weight: bold;
+        }
+
+        &.active-planets::after {
+          content: "";
+          height: 2px;
+
+          border-radius: 3px 3px 0 0;
+          width: 40px;
+          position: fixed;
+          bottom: 395px;
+          left: 61.7%;
+          background: rgb(255, 255, 255);
+        }
+      }
+      .teste1 .li-mars::before,
+      .li-mars:hover::before {
+        content: "";
+        height: 3px;
+
+        border-radius: 3px 3px 0 0;
+        width: 40px;
+        position: fixed;
+        bottom: 395px;
+        left: 0%;
+        background: rgba(255, 255, 255, 0.253);
+      }
+
+      .li-mars:hover::before {
+        left: 80%;
+        right: 0%;
+        animation: expandmars 0.3s linear;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes expandmars {
+        to {
+          left: 863px;
+          right: 0;
+        }
+      }
+      .teste2 .li-europa::before,
+      .li-europa:hover::before {
+        content: "";
+        height: 3px;
+
+        border-radius: 3px 3px 0 0;
+        width: 52px;
+        position: fixed;
+        bottom: 395px;
+        left: 0%;
+        background: rgba(255, 255, 255, 0.253);
+      }
+
+      .li-europa:hover::before {
+        left: 80%;
+        right: 0%;
+        animation: expandeuropa 0.3s linear;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes expandeuropa {
+        to {
+          left: 935px;
+          right: 0;
+        }
+      }
+      .teste3 .li-titan::before,
+      .li-titan:hover::before {
+        content: "";
+        height: 3px;
+
+        border-radius: 3px 3px 0 0;
+        width: 40px;
+        position: fixed;
+        bottom: 395px;
+        left: 0%;
+        background: rgba(255, 255, 255, 0.253);
+      }
+
+      .li-titan:hover::before {
+        left: 80%;
+        right: 0%;
+        animation: expandtitan 0.3s linear;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes expandtitan {
+        to {
+          left: 1020px;
+          right: 0;
         }
       }
     }
