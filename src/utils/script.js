@@ -54,3 +54,4 @@ btnMobile.addEventListener("click", () => {
 btnClose.addEventListener("click", () => {
   closeMenu();
 });
+console.log("ciando branche");
