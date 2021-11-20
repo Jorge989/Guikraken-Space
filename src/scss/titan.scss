@@ -366,7 +366,7 @@ header {
     }
     &.active {
       color: #fff;
-      // font-weight: bold;
+      font-weight: bold;
     }
     &.active::after {
       content: "";
@@ -505,7 +505,7 @@ header {
         &.active-planets {
           color: #fff;
 
-          // font-weight: bold;
+          font-weight: bold;
         }
 
         &.active-planets::after {
@@ -518,6 +518,110 @@ header {
           bottom: 395px;
           left: 79.6%;
           background: rgb(255, 255, 255);
+        }
+      }
+      .teste .li-mars::before,
+      .li-mars:hover::before {
+        content: "";
+        height: 3px;
+
+        border-radius: 3px 3px 0 0;
+        width: 40px;
+        position: fixed;
+        bottom: 395px;
+        left: 0%;
+        background: rgba(255, 255, 255, 0.253);
+      }
+
+      .li-mars:hover::before {
+        left: 80%;
+        right: 0%;
+        animation: expandmars 0.3s linear;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes expandmars {
+        to {
+          left: 863px;
+          right: 0;
+        }
+      }
+      .teste .li-europa::before,
+      .li-europa:hover::before {
+        content: "";
+        height: 3px;
+
+        border-radius: 3px 3px 0 0;
+        width: 52px;
+        position: fixed;
+        bottom: 395px;
+        left: 0%;
+        background: rgba(255, 255, 255, 0.253);
+      }
+
+      .li-europa:hover::before {
+        left: 80%;
+        right: 0%;
+        animation: expandeuropa 0.3s linear;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes expandeuropa {
+        to {
+          left: 935px;
+          right: 0;
+        }
+      }
+      .teste .li-titan::before,
+      .li-titan:hover::before {
+        content: "";
+        height: 3px;
+
+        border-radius: 3px 3px 0 0;
+        width: 40px;
+        position: fixed;
+        bottom: 395px;
+        left: 0%;
+        background: rgba(255, 255, 255, 0.253);
+      }
+
+      .li-titan:hover::before {
+        left: 80%;
+        right: 0%;
+        animation: expandtitan 0.3s linear;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes expandtitan {
+        to {
+          left: 1020px;
+          right: 0;
+        }
+      }
+      .teste .active-planets::before,
+      .active-planets:hover::before {
+        content: "";
+        height: 3px;
+
+        border-radius: 3px 3px 0 0;
+        width: 40px;
+        position: fixed;
+        bottom: 395px;
+        left: 0%;
+        background: rgba(255, 255, 255, 0.253);
+      }
+
+      .active-planets:hover::before {
+        left: 80%;
+        right: 0%;
+        animation: expandmoon 0.3s linear;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes expandmoon {
+        to {
+          left: 790px;
+          right: 0;
         }
       }
     }
