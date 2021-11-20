@@ -69,6 +69,7 @@ header {
         width: 38px;
       }
     }
+
     #close.open {
       display: block;
       margin-left: 76%;
@@ -366,7 +367,6 @@ header {
     }
     &.active {
       color: #fff;
-      font-weight: bold;
     }
     &.active::after {
       content: "";
@@ -505,7 +505,7 @@ header {
         &.active-planets {
           color: #fff;
 
-          font-weight: bold;
+          // font-weight: bold;
         }
 
         &.active-planets::after {
@@ -1120,5 +1120,23 @@ header {
         }
       }
     }
+  }
+}
+@media (max-width: 1208px) {
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &:hover {
+    color: #fff;
+  }
+  &.ali-mars {
+    display: block;
+
+    // font-weight: bold;
+  }
+
+  &.li-mars::after {
+    display: none;
   }
 }

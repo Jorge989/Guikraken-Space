@@ -190,11 +190,7 @@ header {
     z-index: 999;
   }
 }
-@media (max-width: 1270px) {
-  .active-planets {
-    display: none;
-  }
-}
+
 @media (max-width: 800px) {
   .icone-linha {
     width: 100%;
@@ -386,6 +382,7 @@ header {
       background: rgb(255, 255, 255);
     }
   }
+
   @media (max-width: 800px) {
     a {
       font-size: 13px;
@@ -526,6 +523,7 @@ header {
           background: rgb(255, 255, 255);
         }
       }
+
       .teste1 .li-mars::before,
       .li-mars:hover::before {
         content: "";
@@ -1100,5 +1098,23 @@ header {
         }
       }
     }
+  }
+}
+@media (max-width: 1208px) {
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &:hover {
+    color: #fff;
+  }
+  &.active-planets {
+    display: block;
+
+    // font-weight: bold;
+  }
+
+  &.active-planets::after {
+    display: none;
   }
 }

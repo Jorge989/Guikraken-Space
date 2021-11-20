@@ -366,7 +366,7 @@ header {
     }
     &.active {
       color: #fff;
-      font-weight: bold;
+      // font-weight: bold;
     }
     &.active::after {
       content: "";
@@ -505,7 +505,7 @@ header {
         &.active-planets {
           color: #fff;
 
-          font-weight: bold;
+          // font-weight: bold;
         }
 
         &.active-planets::after {
