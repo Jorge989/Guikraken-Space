@@ -636,7 +636,7 @@ header {
       font-weight: 300;
       letter-spacing: 1px;
       padding-top: 10px;
-      padding-right: 28px;
+      padding-left: 20px;
     }
     p {
       width: 100%;
@@ -653,8 +653,8 @@ header {
     }
     hr {
       justify-content: center;
-      width: 73%;
-      margin-left: 70px;
+      width: 82%;
+      margin-left: 60px;
 
       margin-top: 30px;
     }
@@ -1120,5 +1120,23 @@ header {
         }
       }
     }
+  }
+}
+@media (max-width: 1208px) {
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &:hover {
+    color: #fff;
+  }
+  &.active-planets {
+    display: block;
+
+    // font-weight: bold;
+  }
+
+  &.active-planets::after {
+    display: none;
   }
 }
