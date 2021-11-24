@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url("/src/img/destination/background-destination-desktop.jpg");
+  background-image: url("/src/img/crew/background-crew-desktop.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@ body {
 
 @media screen and(max-width: 800px) {
   body {
-    background-image: url("/src/img/destination/background-destination-tablet.jpg");
+    background-image: url("/src/img/crew/background-crew-tablet.jpg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -250,7 +250,7 @@ header {
     height: 3px;
 
     border-radius: 3px 3px 0 0;
-    width: 0px;
+    width: 130px;
     position: fixed;
     bottom: 1px;
     left: 9.5%;
@@ -376,10 +376,10 @@ header {
       height: 3px;
 
       border-radius: 3px 3px 0 0;
-      width: 120px;
+      width: 70px;
       position: fixed;
       bottom: 1px;
-      left: 29%;
+      left: 55%;
       background: rgb(255, 255, 255);
     }
   }
@@ -413,13 +413,22 @@ header {
   max-width: 1400px;
   margin: 0 auto;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
-  padding: 0px 100px 0px 100px;
+  padding: 0px 100px 0px 50px;
   padding-top: 0px;
 
   flex-wrap: wrap;
 
+  #hr-mobile {
+    display: none;
+  }
+  #texto-meet-you-crew-mobile {
+    display: none;
+  }
+  .circulos-nav-mobile {
+    display: none;
+  }
   h1 {
     font-size: 120px;
     letter-spacing: 6px;
@@ -433,7 +442,37 @@ header {
   }
   .conteudo-paragrafos {
     width: 50%;
+    // height: 70vh;
+    height: 75vh;
+    padding-left: 33px;
+    .circulos-nav {
+      display: flex;
 
+      ul {
+        display: flex;
+        padding-left: 10px;
+        list-style: circle;
+
+        li {
+          padding-left: 16px;
+          padding-top: 40px;
+          a {
+            text-decoration: none;
+
+            div {
+              width: 11px;
+              height: 11px;
+
+              background-color: rgba(207, 207, 207, 0.411);
+              border-radius: 100%;
+            }
+            #douglas {
+              background-color: rgb(255, 255, 255) !important;
+            }
+          }
+        }
+      }
+    }
     span {
       color: rgb(88, 88, 88);
       font-size: bold !important;
@@ -441,26 +480,39 @@ header {
       font-weight: bold;
       font-size: 32px;
     }
+    h2 {
+      font-size: 30px;
+      color: #999999;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      font-weight: 300;
+      padding-left: 10px;
+      padding-top: 85px;
+    }
+    h1 {
+      font-size: 43px;
+      padding-left: 10px;
+      padding-top: 10px;
+    }
     h4 {
       padding-left: 10px;
       font-family: "Oswald", sans-serif;
       letter-spacing: 5px;
       font-size: 28px;
       font-weight: 200;
+
       text-transform: uppercase;
     }
-    img {
-      width: 500px;
-      // width: 90%;
-      padding-left: 160px;
-      padding-top: 50px;
-    }
+
     p {
-      padding-left: 10px;
+      padding-left: 0px;
       font-family: "Oswald", sans-serif;
       font-weight: 100;
+      padding-top: 20px;
       letter-spacing: 2px;
       font-size: 17px;
+      padding-left: 10px;
     }
   }
   .informacoes-planeta {
@@ -470,8 +522,14 @@ header {
     justify-content: flex-start;
     background-color: transparent;
     width: 500px;
-    height: 100%;
+    height: 75vh;
+    padding-right: 57px;
 
+    img {
+      width: 76%;
+
+      // width: 90%;
+    }
     #moon-paragrafer-desktop {
       display: block;
     }
@@ -637,64 +695,9 @@ header {
 
       margin-top: 30px;
     }
-    .distance-and-days {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      align-items: center;
-      text-transform: uppercase;
-      width: 100%;
-
-      .distance {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-        align-items: flex-start;
-        gap: 10px;
-        justify-content: center;
-        width: 27%;
-        p {
-          justify-content: flex-start;
-
-          padding: 0;
-          font-family: "Chakra Petch", sans-serif;
-          font-size: 14px;
-          margin: 0;
-          text-align: left;
-        }
-        h3 {
-          width: 100%;
-          font-size: 23px;
-          font-family: "Chakra Petch", sans-serif;
-        }
-      }
-      .days {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-        align-items: flex-start;
-        gap: 10px;
-        justify-content: center;
-        width: 29%;
-        margin-left: 20px;
-        p {
-          justify-content: flex-start;
-
-          padding: 0;
-          font-family: "Chakra Petch", sans-serif;
-          font-size: 14px;
-          margin: 0;
-          text-align: left;
-        }
-        h3 {
-          width: 100%;
-          font-size: 23px;
-          font-family: "Chakra Petch", sans-serif;
-        }
-      }
-    }
   }
 }
+
 @media screen and(max-width:1200px) {
   .conteudo-home {
     display: flex;
@@ -702,10 +705,11 @@ header {
     max-width: 1400px;
     margin: 0 auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
-    padding: 0px 100px 0px 100px;
+    padding: 0px 100px 0px 50px;
     padding-top: 0px;
+
     flex-wrap: wrap;
 
     h1 {
@@ -721,12 +725,27 @@ header {
     }
     .conteudo-paragrafos {
       width: 100%;
-
+      display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      display: flex;
+      justify-content: flex-start;
+      // height: 70vh;
+      height: 65vh;
+      padding-left: 0px;
 
+      .meet-crew-span-h4 {
+        width: 100%;
+
+        padding-left: 100px;
+      }
+      h4 {
+        padding-left: 10px;
+        font-family: "Oswald", sans-serif;
+        letter-spacing: 5px;
+        font-size: 28px;
+        font-weight: 200;
+        text-transform: uppercase;
+      }
       span {
         color: rgb(88, 88, 88);
         font-size: bold !important;
@@ -734,98 +753,43 @@ header {
         font-weight: bold;
         font-size: 32px;
       }
-      h4 {
-        padding-right: 40%;
-        font-family: "Oswald", sans-serif;
-        letter-spacing: 5px;
-        font-size: 28px;
-        font-weight: 200;
+      h2 {
+        font-size: 30px;
+        color: #999999;
         text-transform: uppercase;
+        letter-spacing: 2px;
+
+        font-weight: 300;
+        padding-top: 75px;
       }
-      img {
-        width: 50%;
-        // width: 90%;
-        padding-left: 0px;
-        padding-top: 50px;
+      h1 {
+        padding-top: 20px;
       }
+
       p {
-        padding-left: 10px;
+        padding-left: 0px;
         font-family: "Oswald", sans-serif;
         font-weight: 100;
+        padding-top: 20px;
         letter-spacing: 2px;
         font-size: 17px;
+        text-align: center;
       }
     }
     .informacoes-planeta {
       display: flex;
       align-items: center;
       flex-direction: column;
-      justify-content: center;
-      background-color: transparent;
+      justify-content: flex-start;
+
       width: 100%;
       height: 100%;
-      margin-top: 20px;
+      padding-right: 0px;
 
-      nav {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-right: 0px;
+      img {
+        width: 50%;
 
-        margin-top: 40px;
-      }
-      ul {
-        display: flex;
-        font-family: "Roboto Condensed", sans-serif;
-        width: 100%;
-
-        gap: 40px;
-        align-items: center;
-        text-transform: uppercase;
-        justify-content: center;
-        padding-left: 0px;
-
-        li {
-          a {
-            cursor: pointer;
-            font-size: 20px;
-          }
-        }
-      }
-      h2 {
-        font-family: "Bitter", serif;
-
-        color: rgb(255, 255, 255);
-
-        font-size: 95px;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 300;
-        letter-spacing: 1px;
-        padding-top: 10px;
-        padding-right: 0px;
-      }
-      p {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-        padding-top: 10px;
-        align-items: center;
-        padding-left: 0px;
-        letter-spacing: 1px;
-        line-height: 25px;
-        text-align: center;
-        font-family: "Roboto Condensed", sans-serif;
-      }
-      hr {
-        justify-content: center;
-        width: 100%;
-        margin-left: 0px;
-
-        margin-top: 30px;
+        // width: 90%;
       }
       .distance-and-days {
         display: flex;
@@ -901,31 +865,58 @@ header {
     max-width: 1400px;
     margin: 0 auto;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
     padding: 0px 0px 0px 0px;
     padding-top: 0px;
 
     flex-wrap: wrap;
-
-    h1 {
-      font-size: 50px;
-      letter-spacing: 6px;
-      text-transform: uppercase;
-      // font-family: "Besley", serif;
-
-      font-family: "Chakra Petch", sans-serif;
-
-      font-weight: 100;
-      text-transform: uppercase;
-    }
-    .conteudo-paragrafos {
-      flex-direction: column;
-      align-items: center;
+    hr {
       justify-content: center;
+      width: 90% !important;
+      margin-left: 0px !important;
+
+      margin-top: 30px;
+    }
+    h2 {
+      padding-top: 0px !important;
+      margin-top: 30px;
+    }
+    h1 {
+      font-size: 33px !important;
+    }
+    .informacoes-planeta {
       display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
 
       width: 100%;
+      height: 100%;
+      padding-right: 0px;
+
+      img {
+        width: 55%;
+        margin-top: 30px;
+
+        // width: 90%;
+      }
+      #hr-mobile {
+        display: flex;
+        margin-top: 0px;
+      }
+    }
+
+    #texto-meet-you-crew-mobile {
+      display: block;
+
+      padding-right: 0%;
+      font-family: "Oswald", sans-serif;
+      letter-spacing: 5px;
+      font-size: 17px;
+
+      font-weight: 200;
+      text-transform: uppercase;
       span {
         color: rgb(88, 88, 88);
         font-size: bold !important;
@@ -933,170 +924,78 @@ header {
         font-weight: bold;
         font-size: 32px;
       }
-      h4 {
-        padding-right: 0%;
-        font-family: "Oswald", sans-serif;
-        letter-spacing: 5px;
-        font-size: 17px;
+    }
+    .circulos-nav-mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-        font-weight: 200;
-        text-transform: uppercase;
-      }
-      img {
-        width: 50%;
-        // width: 90%;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding-left: 0px;
-        padding-top: 50px;
+        list-style: circle;
+        width: 50%;
+
+        li {
+          padding-left: 0px;
+          padding-top: 40px;
+          a {
+            text-decoration: none;
+
+            div {
+              width: 13px;
+              height: 13px;
+
+              background-color: rgba(207, 207, 207, 0.411);
+              border-radius: 100%;
+            }
+            #douglas {
+              background-color: rgb(255, 255, 255) !important;
+            }
+          }
+        }
       }
+    }
+    .circulos-nav {
+      display: none !important;
+    }
+    .conteudo-paragrafos {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      height: 40vh;
+      padding-left: 0px;
+
+      padding: 2px;
+
+      .meet-crew-span-h4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+        padding: 5px;
+      }
+
+      span {
+        display: none;
+      }
+      h4 {
+        display: none;
+      }
+
       p {
         padding-left: 10px;
         font-family: "Oswald", sans-serif;
         font-weight: 100;
         letter-spacing: 2px;
-        font-size: 17px;
-      }
-    }
-    .informacoes-planeta {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-      background-color: transparent;
-      width: 100%;
-      height: 100%;
-      padding: 20px;
-      #moon-paragrafer-desktop {
-        display: none;
-      }
-      #moon-paragrafer-mobile {
-        display: block;
-
-        font-size: 15px;
-      }
-      nav {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-right: 0px;
-
-        margin-top: 40px;
-      }
-      ul {
-        display: flex;
-        font-family: "Roboto Condensed", sans-serif;
-        width: 100%;
-
-        gap: 40px;
-        align-items: center;
-        text-transform: uppercase;
-        justify-content: center;
-        padding-left: 0px;
-
-        li {
-          a {
-            cursor: pointer;
-            font-size: 20px;
-          }
-        }
-      }
-      h2 {
-        font-family: "Bitter", serif;
-
-        color: rgb(255, 255, 255);
-
-        font-size: 95px;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 300;
-        letter-spacing: 1px;
-        padding-top: 10px;
-        padding-right: 0px;
-      }
-      p {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-        padding-top: 10px;
-        align-items: center;
-        padding-left: 0px;
-        letter-spacing: 1px;
-        line-height: 25px;
-        text-align: center;
-        font-family: "Roboto Condensed", sans-serif;
-      }
-      hr {
-        justify-content: center;
-        width: 100%;
-        margin-left: 0px;
-
-        margin-top: 30px;
-      }
-      .distance-and-days {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        align-items: center;
-        text-transform: uppercase;
-        width: 100%;
-
-        .distance {
-          display: flex;
-          flex-direction: column;
-          margin-top: 10px;
-          align-items: center;
-          gap: 10px;
-          justify-content: center;
-          width: 200px;
-
-          p {
-            justify-content: center;
-
-            padding: 0;
-            font-family: "Chakra Petch", sans-serif;
-            font-size: 14px;
-            margin: 0;
-
-            text-align: center;
-          }
-          h3 {
-            width: 100%;
-            font-size: 23px;
-            padding: 0px;
-            margin: 0px;
-            font-family: "Chakra Petch", sans-serif;
-            text-align: center;
-          }
-        }
-        .days {
-          display: flex;
-          width: 200px;
-          flex-direction: column;
-          margin-top: 10px;
-          align-items: center;
-          gap: 10px;
-          justify-content: center;
-
-          margin-left: 0px;
-
-          p {
-            justify-content: center;
-
-            padding: 0;
-            font-family: "Chakra Petch", sans-serif;
-            font-size: 14px;
-            margin: 0;
-            text-align: center;
-          }
-          h3 {
-            width: 100%;
-            font-size: 23px;
-            text-align: center;
-            font-family: "Chakra Petch", sans-serif;
-          }
-        }
+        font-size: 14px;
+        padding: 5px;
       }
     }
   }
